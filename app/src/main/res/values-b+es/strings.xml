@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">mvpDemo</string>
+    <string name="userName">Nombre de usuario</string>
+    <string name="passWord">Contraseña</string>
+    <string name="login">iniciar sesión</string>
+</resources>
