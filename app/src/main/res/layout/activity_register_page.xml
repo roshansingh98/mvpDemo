@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".registerPage">
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:hint="Enter Name"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:id="@+id/etUsername"/>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:hint="Enter Surname"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:id="@+id/etSurname"
+        android:inputType="textPersonName"/>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:hint="Enter Email-ID"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:id="@+id/etEmail"
+        android:inputType="textEmailAddress"/>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:hint="Enter Password"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:id="@+id/etPassword"
+        android:inputType="textPassword"/>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:hint="REGISTER"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:id="@+id/btRegister" />
+</LinearLayout>

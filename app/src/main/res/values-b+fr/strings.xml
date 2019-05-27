@@ -2,4 +2,5 @@
 <resources>
     <string name="app_name">mvpDemo</string>
     <string name="login">"s'identifier"</string>
+    <string name="register">Register</string>
 </resources>

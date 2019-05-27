@@ -4,49 +4,74 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    tools:context=".LoginScreen">
 
     <Space
         android:layout_width="match_parent"
-        android:layout_height="75dp"/>
+        android:layout_height="75dp" />
+
     <TextView
+        android:id="@+id/userNam"
         android:layout_width="wrap_content"
         android:layout_height="30dp"
-        android:ems="10"
-        android:gravity="center"
         android:layout_gravity="center"
-        android:id="@+id/text"/>
+        android:ems="10"
+        android:gravity="center" />
+
     <EditText
+        android:id="@+id/userName"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
-        android:inputType="textPersonName"
+        android:layout_gravity="center"
         android:ems="10"
-        android:id="@+id/userName" android:gravity="center" android:layout_gravity="center"/>
+        android:gravity="center"
+        android:inputType="textPersonName" />
+
     <Space
         android:layout_width="match_parent"
-        android:layout_height="50dp"/>
+        android:layout_height="50dp" />
+
     <TextView
+        android:id="@+id/passWor"
         android:layout_width="wrap_content"
         android:layout_height="30dp"
-        android:ems="10"
-        android:gravity="center"
         android:layout_gravity="center"
-        android:id="@+id/text1"/>
+        android:ems="10"
+        android:gravity="center" />
+
     <EditText
+        android:id="@+id/passWord"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
-        android:inputType="textPassword"
+        android:layout_gravity="center"
         android:ems="10"
-        android:id="@+id/passWord" android:layout_gravity="center" android:gravity="center"/>
+        android:gravity="center"
+        android:inputType="textPassword" />
+
     <Space
         android:layout_width="match_parent"
-        android:layout_height="75dp"/>
+        android:layout_height="50dp" />
+
     <Button
-        android:text="@string/login"
+        android:id="@+id/btLogin"
         android:layout_width="150dp"
+        android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:gravity="center"
-        android:layout_height="wrap_content" android:id="@+id/loginButton"/>
+        android:text="@string/login" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+    <TextView
+        android:id="@+id/tvRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="@string/register" />
+
 
 </LinearLayout>
