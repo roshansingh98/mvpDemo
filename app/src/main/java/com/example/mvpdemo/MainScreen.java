@@ -22,7 +22,7 @@ public class MainScreen extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 string="Successfully Logged Out";
-                Intent intent=new Intent();
+                Intent intent=getIntent();
                 intent.putExtra("message", string);
                 setResult(RESULT_OK,intent);
                 finish();

@@ -37,7 +37,7 @@ public class LoginScreen extends AppCompatActivity implements View.OnClickListen
     private final String USER_NAME = "abc";
     private final String USER_PWD = "abc";
 
-    private final int result_code=1;
+    private final int request_code=1;
 
 
     @Override
@@ -91,7 +91,7 @@ public class LoginScreen extends AppCompatActivity implements View.OnClickListen
             }).start();
 
             Intent intent = new Intent(getApplicationContext(), MainScreen.class);
-            startActivityForResult(intent,result_code);
+            startActivityForResult(intent,request_code);
 
         }else{
             showToast("Invalid user name or password");
@@ -155,8 +155,8 @@ public class LoginScreen extends AppCompatActivity implements View.OnClickListen
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        if(requestCode==result_code){
-            if(resultCode==RESULT_CANCELED){
+        if(requestCode==requestCode){
+            if(resultCode==RESULT_OK){
                 String logout_message=data.getStringExtra("message");
                 Toast.makeText(this, logout_message, Toast.LENGTH_SHORT).show();
                 new Thread(new Runnable() {
@@ -167,6 +167,8 @@ public class LoginScreen extends AppCompatActivity implements View.OnClickListen
                     }
                 }).start();
             }
+            else if (resultCode==RESULT_CANCELED)
+                Toast.makeText(this, "Logout Failed", Toast.LENGTH_SHORT).show();
         }
     }
     //Todo 1. use manifest one time history option 2. use startActivityForResult 3.create a clicklistener is separate class
